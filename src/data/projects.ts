@@ -14,7 +14,7 @@ export const projects: Project[] = [
     description:
       'Mobile application built with React Native and Firebase for managing inventory in real time.',
     stack: ['React Native', 'Firebase', 'Expo', 'TypeScript'],
-    github: 'https://github.com/youruser/inventory-app',
+    //github: 'https://github.com/youruser/inventory-app',
   },
   {
     id: '2',
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     description:
       'Mobile application to track incomes and expenses with authentication and charts.',
     stack: ['React Native', 'Firebase', 'Expo', 'TypeScript'],
-    demo: 'https://your-demo.vercel.app',
+    //demo: 'https://your-demo.vercel.app',
   },
   {
     id: '3',
@@ -30,6 +30,6 @@ export const projects: Project[] = [
     description:
       'Mobile application for Interestelar coffee shop with authentication and loyverse integration.',
     stack: ['React Native', 'Firebase', 'Expo', 'TypeScript', 'Loyverse'],
-    demo: 'https://your-demo.vercel.app',
+    //demo: 'https://your-demo.vercel.app',
   },
 ];
