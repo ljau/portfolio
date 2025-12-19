@@ -3,10 +3,8 @@
 import { projects } from '@/data/projects';
 import ProjectCard from '@/components/ProjectCard';
 import { Grid, Wrapper, Title } from './styles';
-import { motion } from 'framer-motion';
 
 const containerVariants = {
-  hidden: {},
   visible: {
     transition: {
       staggerChildren: 0.12,
@@ -17,10 +15,10 @@ const containerVariants = {
 export default function ProjectsGrid() {
   return (
     <Wrapper
-      as={motion.section}
       variants={containerVariants}
-      initial="hidden"
-      animate="visible"
+      initial={false}
+      whileInView="visible"
+      viewport={{ once: true }}
     >
       <Title>Projects</Title>
 

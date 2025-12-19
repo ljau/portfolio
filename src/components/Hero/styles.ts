@@ -26,7 +26,7 @@ export const Title = styled.h1`
 export const Subtitle = styled.p`
   font-size: 1.1rem;
   line-height: 1.6;
-  color: ${({ theme }) => theme.colors.muted};
+  color: ${({ theme }) => theme.colors.surface};
   margin-bottom: 2rem;
 `;
 
@@ -52,7 +52,7 @@ export const Actions = styled.div`
   }
 
   a.secondary {
-    border: 1px solid ${({ theme }) => theme.colors.muted};
+    border: 1px solid ${({ theme }) => theme.colors.surface};
     color: ${({ theme }) => theme.colors.text};
 
     &:hover {

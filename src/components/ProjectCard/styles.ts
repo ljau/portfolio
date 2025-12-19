@@ -16,7 +16,7 @@ export const Title = styled.h2`
 export const Description = styled.p`
   font-size: 0.95rem;
   line-height: 1.5;
-  color: ${({ theme }) => theme.colors.muted};
+  color: ${({ theme }) => theme.colors.surface};
   margin-bottom: 1rem;
 `;
 

@@ -18,7 +18,7 @@ export const Block = styled.div`
 export const Text = styled.p`
   font-size: 1rem;
   line-height: 1.7;
-  color: ${({ theme }) => theme.colors.muted};
+  color: ${({ theme }) => theme.colors.surface};
   margin-bottom: 1rem;
 `;
 

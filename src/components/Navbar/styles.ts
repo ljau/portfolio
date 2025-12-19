@@ -25,7 +25,7 @@ export const NavLinks = styled.div`
   gap: 1.5rem;
 
   a {
-    color: ${({ theme }) => theme.colors.muted};
+    color: ${({ theme }) => theme.colors.surface};
     font-size: 0.95rem;
     transition: color 0.2s ease;
 

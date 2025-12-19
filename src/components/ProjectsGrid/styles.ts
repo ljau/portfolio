@@ -1,13 +1,16 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const Wrapper = styled.section`
-  padding: 4rem 2rem;
-  max-width: 1100px;
-  margin: 0 auto;
+export const Wrapper = styled(motion.section)`
+  padding: 4rem 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 `;
 
-export const Title = styled.h1`
-  font-size: 2rem;
+export const Title = styled.h2`
   margin-bottom: 2rem;
 `;
 
