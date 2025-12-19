@@ -1,12 +1,5 @@
-'use client';
-
-import styled from 'styled-components';
-
-const Title = styled.h1`
-  font-size: 3rem;
-  color: ${({ theme }) => theme.colors.primary};
-`;
+import Hero from '@/components/Hero';
 
 export default function Home() {
-  return <Title>Portfolio listo 🚀</Title>;
+  return <Hero />;
 }
