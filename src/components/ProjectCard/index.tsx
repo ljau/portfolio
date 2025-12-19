@@ -9,7 +9,12 @@ type Props = {
 
 export default function ProjectCard({ project }: Props) {
   return (
-    <Card>
+    <Card
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, ease: 'easeOut' }}
+      whileHover={{ y: -6 }}
+    >
       <Title>{project.title}</Title>
       <Description>{project.description}</Description>
 

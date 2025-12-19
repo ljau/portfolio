@@ -1,17 +1,11 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const Card = styled.article`
+export const Card = styled(motion.article)`
   padding: 1.5rem;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.05);
-
-  transition: transform 0.2s ease, border 0.2s ease;
-
-  &:hover {
-    transform: translateY(-4px);
-    border-color: ${({ theme }) => theme.colors.primary};
-  }
 `;
 
 export const Title = styled.h2`
