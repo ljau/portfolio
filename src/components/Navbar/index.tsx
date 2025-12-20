@@ -1,20 +1,14 @@
 'use client';
 
-import Link from 'next/link';
-import { Container, Logo, NavLinks } from './styles';
+import { Nav, NavLink } from './styles';
 
 export default function Navbar() {
   return (
-    <Container>
-      <Logo>
-        <Link href="/">Home</Link>
-      </Logo>
-
-      <NavLinks>
-        <Link href="/projects">Projects</Link>
-        <Link href="/about">About</Link>
-        <Link href="/contact">Contact</Link>
-      </NavLinks>
-    </Container>
+    <Nav>
+      <NavLink href="#home">Home</NavLink>
+      <NavLink href="#experience">Experience</NavLink>
+      <NavLink href="#projects">Projects</NavLink>
+      <NavLink href="#contact">Contact</NavLink>
+    </Nav>
   );
 }

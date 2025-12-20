@@ -1,36 +1,50 @@
 import styled from 'styled-components';
 
-export const Container = styled.nav`
+export const Nav = styled.nav`
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
   height: 64px;
-  padding: 0 2rem;
+  width: 100%;
+
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2rem;
 
   background: ${({ theme }) => theme.colors.background};
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(8px);
 `;
 
-export const Logo = styled.div`
-  font-size: 1.25rem;
-  font-weight: 600;
+export const NavLink = styled.a`
+  position: relative;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
 
-  a {
+  color: ${({ theme }) => theme.colors.surface};
+  transition: color 0.2s ease;
+
+  &:hover {
     color: ${({ theme }) => theme.colors.text};
   }
-`;
 
-export const NavLinks = styled.div`
-  display: flex;
-  gap: 1.5rem;
+  /* underline animado */
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background-color: ${({ theme }) => theme.colors.primary};
+    transition: width 0.25s ease;
+  }
 
-  a {
-    color: ${({ theme }) => theme.colors.surface};
-    font-size: 0.95rem;
-    transition: color 0.2s ease;
-
-    &:hover {
-      color: ${({ theme }) => theme.colors.text};
-    }
+  &:hover::after {
+    width: 100%;
   }
 `;

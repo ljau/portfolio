@@ -4,6 +4,10 @@ import { createGlobalStyle } from 'styled-components';
 import { theme } from '@/styles/theme';
 
 export const GlobalStyles = createGlobalStyle`
+  html {
+    scroll-behavior: smooth;
+  }
+    
   *, *::before, *::after {
     box-sizing: border-box;
   }
