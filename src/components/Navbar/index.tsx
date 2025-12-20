@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <Container>
       <Logo>
-        <Link href="/">Inicio</Link>
+        <Link href="/">Home</Link>
       </Logo>
 
       <NavLinks>
