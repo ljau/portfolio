@@ -1,14 +1,26 @@
 import Hero from '@/components/Hero';
 import Experience from '@/components/Experience';
-import FeaturedProjects from '@/components/ProjectsGrid';
 import ProjectsGrid from '@/components/ProjectsGrid';
+import ContactSection from '@/components/ContactSection';
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Experience />
-      <ProjectsGrid />
+      <section id="home">
+        <Hero />
+      </section>
+
+      <section id="experience">
+        <Experience />
+      </section>
+
+      <section id="projects">
+        <ProjectsGrid />
+      </section>
+
+      <section id="contact">
+        <ContactSection />
+      </section>
     </>
   );
 }
